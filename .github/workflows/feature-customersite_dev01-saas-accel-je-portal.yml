@@ -32,7 +32,7 @@ jobs:
         run: |
           pwd
           ls 
-          dotnet build
+          dotnet build CustomerSite.csproj
 
       # - name: dotnet publish
       #   run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
