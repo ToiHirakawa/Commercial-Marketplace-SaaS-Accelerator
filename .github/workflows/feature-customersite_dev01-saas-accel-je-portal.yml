@@ -11,6 +11,9 @@ on:
     #   - feature-CustomerSite
   workflow_dispatch:
 
+env:
+  DOTNET_CORE_VERSION: '6.0.x'
+
 jobs:
   build:
     runs-on: windows-latest
@@ -21,13 +24,15 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
-          include-prerelease: true
+          dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
 
       # - name: Build with dotnet
       #   run: dotnet build --configuration Release
       - name: Build with dotnet
-        run: dotnet build
+        run: |
+          pwd
+          ls 
+          dotnet build
 
       # - name: dotnet publish
       #   run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
