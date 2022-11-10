@@ -5,10 +5,10 @@ name: Build and deploy ASP.Net Core app to Azure Web App - dev01-saas-accel-je-p
 
 on:
   push:
-    # branches:
-    #   - feature-CustomerSite
-    branches-ignore:
+    branches:
       - feature-CustomerSite
+    # branches-ignore:
+    #   - feature-CustomerSite
   workflow_dispatch:
 
 jobs:
