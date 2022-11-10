@@ -15,7 +15,8 @@ on:
       - feature-deployTest
 
 env:  
-  CUSTOMER_PROJECT: './src/Marketplace.SaaS.Accelerator.CustomerSite/Marketplace.SaaS.Accelerator.CustomerSite.csproj'
+  # CUSTOMER_PROJECT: './src/Marketplace.SaaS.Accelerator.CustomerSite/Marketplace.SaaS.Accelerator.CustomerSite.csproj'
+  CUSTOMER_PROJECT: './src/MCustomerSite/CustomerSite.csproj'
   CUSTOMER_AZURE_WEBAPP_PACKAGE_PATH: './src/Marketplace.SaaS.Accelerator.CustomerSite/publish'
   PUBLISHER_PROJECT: './src/Marketplace.SaaS.Accelerator.AdminSite/Marketplace.SaaS.Accelerator.AdminSite.csproj'
   PUBLISHER_AZURE_WEBAPP_PACKAGE_PATH: './src/Marketplace.SaaS.Accelerator.AdminSite/publish'
